@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Rahul Giri | AI Developer</title>
+<title>Rahul Giri | AI Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,8 +25,6 @@ background:#020617;
 color:white;
 overflow-x:hidden;
 }
-
-/* NAV */
 
 nav{
 display:flex;
@@ -51,8 +50,6 @@ nav a:hover{
 color:#38bdf8;
 }
 
-/* HERO */
-
 .hero{
 height:100vh;
 display:flex;
@@ -74,8 +71,6 @@ color:#38bdf8;
 margin-top:10px;
 }
 
-/* SOCIAL ICONS */
-
 .social-icons{
 margin-top:20px;
 display:flex;
@@ -93,8 +88,6 @@ color:#38bdf8;
 transform:scale(1.2);
 }
 
-/* BUTTON */
-
 .btn{
 margin-top:20px;
 padding:12px 25px;
@@ -110,8 +103,6 @@ transition:0.3s;
 transform:scale(1.05);
 }
 
-/* SECTION */
-
 section{padding:100px 10%;}
 
 .section-title{
@@ -121,8 +112,6 @@ font-size:32px;
 margin-bottom:40px;
 }
 
-/* ABOUT */
-
 .about{
 max-width:800px;
 margin:auto;
@@ -130,8 +119,6 @@ text-align:center;
 line-height:1.7;
 color:#cbd5f5;
 }
-
-/* ===== PREMIUM SKILLS ===== */
 
 .skills-container{
 max-width:1000px;
@@ -142,94 +129,50 @@ gap:35px;
 }
 
 .skill-box{
-background:linear-gradient(145deg, rgba(15,23,42,0.8), rgba(2,6,23,0.9));
-border:1px solid rgba(56,189,248,0.25);
-padding:30px;
-border-radius:20px;
-backdrop-filter:blur(20px);
-transition:0.4s;
-position:relative;
-overflow:hidden;
-box-shadow:0 0 20px rgba(56,189,248,0.1);
-}
-
-.skill-box::before{
-content:"";
-position:absolute;
-width:150%;
-height:150%;
-background:radial-gradient(circle, rgba(56,189,248,0.25), transparent 60%);
-top:-40%;
-left:-40%;
-opacity:0;
-transition:0.5s;
-}
-
-.skill-box:hover::before{
-opacity:1;
+background:#0f172a;
+padding:25px;
+border-radius:15px;
+border:1px solid #1e293b;
+transition:0.3s;
 }
 
 .skill-box:hover{
-transform:translateY(-12px) scale(1.04);
-box-shadow:0 0 40px rgba(56,189,248,0.35);
-border-color:#38bdf8;
-}
-
-.skill-icon{
-font-size:28px;
-color:#38bdf8;
-margin-bottom:12px;
+transform:translateY(-8px);
+box-shadow:0 0 25px rgba(56,189,248,0.4);
 }
 
 .skill-box h3{
 color:#38bdf8;
-margin-bottom:15px;
-font-weight:600;
-}
-
-.skill-tags{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
+margin-bottom:10px;
 }
 
 .tag{
-padding:7px 14px;
-background:rgba(56,189,248,0.12);
-border:1px solid rgba(56,189,248,0.3);
+padding:6px 12px;
+background:#1e293b;
 border-radius:20px;
-font-size:13px;
-color:#cbd5f5;
-transition:0.3s;
+font-size:12px;
+margin:4px;
+display:inline-block;
 }
-
-.tag:hover{
-background:linear-gradient(45deg,#38bdf8,#6366f1);
-color:white;
-transform:scale(1.05);
-}
-
-/* PROJECTS */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
 .card{
-background:rgba(15,23,42,0.6);
+background:#0f172a;
 padding:25px;
-border-radius:20px;
-transition:0.4s;
+border-radius:15px;
+transition:0.3s;
+border:1px solid #1e293b;
 }
 
 .card:hover{
-transform:translateY(-10px) scale(1.05);
+transform:translateY(-10px);
 box-shadow:0 0 30px rgba(56,189,248,0.4);
 }
-
-/* CONTACT */
 
 .contact{
 text-align:center;
@@ -241,18 +184,21 @@ color:#38bdf8;
 margin-right:8px;
 }
 
-/* CHAT */
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #1e293b;
+}
 
 .chat{
 position:fixed;
-bottom:20px;
+bottom:80px;
 right:20px;
-width:320px;
+width:300px;
 background:#0f172a;
-border-radius:15px;
+border-radius:10px;
 display:none;
 flex-direction:column;
-overflow:hidden;
 }
 
 .chat-header{
@@ -263,7 +209,7 @@ font-weight:bold;
 }
 
 .chat-body{
-height:250px;
+height:200px;
 overflow-y:auto;
 padding:10px;
 font-size:14px;
@@ -275,15 +221,14 @@ display:flex;
 
 .chat-input input{
 flex:1;
-padding:10px;
+padding:8px;
 border:none;
 }
 
 .chat-input button{
-padding:10px;
+padding:8px;
 background:#38bdf8;
 border:none;
-cursor:pointer;
 }
 
 .chat-toggle{
@@ -297,13 +242,8 @@ border-radius:50%;
 cursor:pointer;
 }
 
-footer{
-text-align:center;
-padding:30px;
-border-top:1px solid #1e293b;
-}
-
 </style>
+
 </head>
 
 <body>
@@ -318,45 +258,37 @@ border-top:1px solid #1e293b;
 </div>
 </nav>
 
-<!-- HERO -->
-
 <section class="hero">
 
 <h1>Rahul Giri</h1>
 <div class="typing" id="typing"></div>
 
-<p style="margin-top:10px;color:#cbd5f5;">🚀 Open to AI / Backend / Generative AI Roles</p>
+<p style="margin-top:10px;color:#cbd5f5;">
+AI Engineer | Generative AI | Python Backend
+</p>
 
 <div class="social-icons">
 <a href="https://github.com/RahulG-12" target="_blank"><i class="fab fa-github"></i></a>
 <a href="https://www.linkedin.com/in/rahul-giri-92b2b822a/" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="mailto:rahulgiri12033@email.com"><i class="fas fa-envelope"></i></a>
-<a href="tel:+918454011003">
-    <i class="fas fa-phone"></i>
-</a>
+<a href="mailto:rahulgiri12033@gmail.com" ><i class="fas fa-envelope"></i></a>
 </div>
 
-<a href="Rahul_K_Giri_Resume.pdf" download>
+<a href="Rahul_AIML_Resume.pdf" download>
 <button class="btn">Download Resume</button>
 </a>
 
 </section>
-
-<!-- ABOUT -->
 
 <section id="about">
 
 <div class="section-title">About Me</div>
 
 <div class="about">
-AI Developer and Computer Engineering graduate passionate about building intelligent systems including voice assistants, automation tools, and retrieval-augmented AI applications.
-Experienced in Python backend development, Generative AI frameworks, and scalable architectures with hands-on experience using Docker for containerized deployment and Git for version control.
-I specialize in developing AI agents, RAG pipelines, and automation workflows that solve real-world problems with production-ready engineering practices.
+AI/ML Engineer passionate about building intelligent systems including AI agents, Retrieval-Augmented Generation platforms, and machine learning inference systems.
+Experienced in Python backend development, LLM integration, and scalable AI architecture using FastAPI and modern AI frameworks.
 </div>
 
 </section>
-
-<!-- SKILLS -->
 
 <section id="skills">
 
@@ -365,82 +297,132 @@ I specialize in developing AI agents, RAG pipelines, and automation workflows th
 <div class="skills-container">
 
 <div class="skill-box">
-<div class="skill-icon"><i class="fas fa-brain"></i></div>
-<h3>AI & Machine Learning</h3>
-<div class="skill-tags">
-<span class="tag">LangChain</span>
-<span class="tag">LangGraph</span>
-<span class="tag">RAG Systems</span>
-<span class="tag">Vector Databases</span>
-<span class="tag">Prompt Engineering</span>
+<h3>AI / Machine Learning</h3>
+<span class="tag">PyTorch</span>
+<span class="tag">Transformers</span>
+<span class="tag">Scikit-learn</span>
+<span class="tag">NLP</span>
+<span class="tag">RAG</span>
 <span class="tag">AI Agents</span>
-</div>
 </div>
 
 <div class="skill-box">
-<div class="skill-icon"><i class="fas fa-server"></i></div>
-<h3>Backend & Development</h3>
-<div class="skill-tags">
+<h3>Backend</h3>
 <span class="tag">Python</span>
 <span class="tag">FastAPI</span>
 <span class="tag">REST APIs</span>
-<span class="tag">MERN Stack</span>
-<span class="tag">Async Processing</span>
 <span class="tag">System Design</span>
-</div>
 </div>
 
 <div class="skill-box">
-<div class="skill-icon"><i class="fas fa-cloud"></i></div>
-<h3>DevOps & Tools</h3>
-<div class="skill-tags">
+<h3>Tools</h3>
 <span class="tag">Docker</span>
 <span class="tag">Git</span>
-<span class="tag">GitHub</span>
+<span class="tag">Streamlit</span>
 <span class="tag">Redis</span>
-<span class="tag">Qdrant</span>
-<span class="tag">Deployment</span>
-</div>
 </div>
 
 </div>
 
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
 
-<div class="section-title">Projects</div>
+<div class="section-title">AI Projects</div>
 
 <div class="projects">
 
-<div class="card">
-<h3>AI Voice Agent</h3>
-<p>Developed a voice-enabled AI assistant capable of executing system commands using LLM reasoning and tool orchestration with Docker deployment.</p>
-<a href="https://drive.google.com/drive/folders/1ymbUSTtKHmJd2NcwfFDdLg03L1BkvTgp?usp=drive_link" target="_blank"><button class="btn">Demo</button></a>
-<a href="https://github.com/RahulG-12/AI_VOICE" target="_blank"><button class="btn">GitHub</button></a>
-</div>
+<!-- PROJECT 1 -->
 
 <div class="card">
-<h3>RAG System with Queue</h3>
-<p>Built a Retrieval-Augmented Generation system using LangChain, Qdrant vector database, and Redis queue architecture for scalable AI search.</p>
-<a href="https://drive.google.com/drive/folders/1uPLtrFIX7AR6og8tQcSchVyqWZoesowy?usp=sharing" target="_blank"><button class="btn">Demo</button></a>
-<a href="https://github.com/RahulG-12/rag-ai-document-chatbot" target="_blank"><button class="btn">GitHub</button></a>
+
+<h3>Adaptive AI Intelligence Platform</h3>
+
+<p>
+Developed a Retrieval-Augmented Generation (RAG) platform that improves LLM responses using contextual document retrieval and intelligent prompt pipelines.  
+Includes monitoring dashboards for retrieval scores, hallucination detection, and model response analytics.
+</p>
+
+<p style="color:#94a3b8;margin-top:10px;">
+Tech: Python, Transformers, FastAPI, RAG, Vector Search, Streamlit
+</p>
+
+<div style="margin-top:15px">
+
+<a href="https://github.com/RahulG-12/ADAPTIVE_LLM" target="_blank">
+<button class="btn">GitHub</button>
+</a>
+
+<a href="https://drive.google.com/drive/folders/1AWLOQkuxqAhV1Ten1AiOeXrDbEtefxID?usp=drive_link" target="_blank">
+<button class="btn">Demo</button>
+</a>
+
 </div>
 
+</div>
+
+
+<!-- PROJECT 2 -->
+
 <div class="card">
-<h3>LangGraph Workflow Agent</h3>
-<p>Created a multi-step AI orchestration pipeline using LangGraph for complex reasoning workflows and intelligent automation.</p>
-<a href="https://drive.google.com/drive/folders/1Rcs5FhaynGVoh0GQBg6EEpnndwVU-AJV?usp=sharing" target="_blank"><button class="btn">Demo</button></a>
-<a href="https://github.com/RahulG-12/AI-Assistant" target="_blank"><button class="btn">GitHub</button></a>
+
+<h3>Autonomous Voice AI Agent</h3>
+
+<p>
+Built a voice-enabled AI assistant capable of understanding spoken commands and executing system tasks using LLM reasoning and tool orchestration.
+Implements speech-to-text, reasoning pipelines, and automated action execution.
+</p>
+
+<p style="color:#94a3b8;margin-top:10px;">
+Tech: Python, SpeechRecognition, LLM APIs, AI Agents, FastAPI
+</p>
+
+<div style="margin-top:15px">
+
+<a href="https://github.com/RahulG-12/AI_VOICE" target="_blank">
+<button class="btn">GitHub</button>
+</a>
+
+<a href="https://drive.google.com/drive/folders/1ymbUSTtKHmJd2NcwfFDdLg03L1BkvTgp?usp=drive_link" target="_blank">
+<button class="btn">Demo</button>
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 3 -->
+
+<div class="card">
+
+<h3>AI Model Intelligence Platform</h3>
+
+<p>
+Designed an AI model evaluation and routing system that trains multiple machine learning models and dynamically selects the best model for prediction based on confidence scores and performance metrics.
+</p>
+
+<p style="color:#94a3b8;margin-top:10px;">
+Tech: Python, PyTorch, Scikit-learn, FastAPI, Streamlit
+</p>
+
+<div style="margin-top:15px">
+
+<a href="https://github.com/RahulG-12/AI_MODEL_INTELLIGENCE" target="_blank">
+<button class="btn">GitHub</button>
+</a>
+
+<a href="https://drive.google.com/drive/folders/1-UAtCia62INU8Q73Ek9RxgUrpi2IBRWG?usp=drive_link" target="_blank">
+<button class="btn">Demo</button>
+</a>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
 
 <section id="contact">
 
@@ -449,10 +431,9 @@ I specialize in developing AI agents, RAG pipelines, and automation workflows th
 <div class="contact">
 
 <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
-<p><i class="fas fa-envelope"></i> rahulgiri12033@email.com</p>
-<p><i class="fab fa-linkedin"></i> https://www.linkedin.com/in/rahul-giri-92b2b822a/</p>
-<p><i class="fab fa-github"></i> https://github.com/RahulG-12</p>
-<p><i class="fas fa-phone"></i> +91 8454011003</p>
+<p><i class="fas fa-envelope"></i> rahulgiri12033@gmail.com</p>
+<p><i class="fab fa-github"></i> github.com/RahulG-12</p>
+<p><i class="fab fa-linkedin"></i> linkedin.com/in/rahul-giri-92b2b822a</p>
 
 </div>
 
@@ -479,7 +460,12 @@ I specialize in developing AI agents, RAG pipelines, and automation workflows th
 
 <script>
 
-const words=["AI Developer","Python Backend Developer","Automation Engineer","Building Intelligent Systems"];
+const words=[
+"AI Engineer",
+"Generative AI Developer",
+"Python Backend Developer",
+"Building Intelligent Systems"
+];
 
 let i=0,j=0,current="",isDeleting=false;
 
@@ -501,8 +487,7 @@ type();
 
 function toggleChat(){
 const chat=document.getElementById("chatBox");
-chat.style.display=chat.style.display==="flex"?"none":"flex";
-chat.style.display="flex";
+chat.style.display = chat.style.display==="flex" ? "none" : "flex";
 }
 
 function sendMessage(){
@@ -512,13 +497,13 @@ const body=document.getElementById("chatBody");
 
 body.innerHTML+=`<div><b>You:</b> ${input}</div>`;
 
-let reply="Rahul is an AI developer specializing in Python, automation, RAG systems, and intelligent agents.";
+let reply="Rahul is an AI engineer specializing in generative AI, RAG systems, and AI agents.";
 
 if(input.toLowerCase().includes("project"))
-reply="Rahul built AI Voice Agent, RAG System with Redis Queue, and LangGraph Workflow Agent.";
+reply="Rahul built Adaptive AI Platform, Autonomous Voice Agent, and AI Model Intelligence Platform.";
 
 if(input.toLowerCase().includes("skill"))
-reply="Rahul works with Python, AI frameworks, Docker, Git, MERN stack, and backend development.";
+reply="Rahul works with Python, PyTorch, Transformers, FastAPI, Docker, and modern AI frameworks.";
 
 body.innerHTML+=`<div><b>AI:</b> ${reply}</div>`;
 }
@@ -527,4 +512,3 @@ body.innerHTML+=`<div><b>AI:</b> ${reply}</div>`;
 
 </body>
 </html>
-
